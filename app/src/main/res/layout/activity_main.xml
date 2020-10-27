@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_main_scene"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:textColor="#03fcad"/>
+
+    <Button
+        android:id="@+id/btnHello1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Say Hello 1"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnHello2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Say Hello 2"
+        android:layout_below="@+id/btnHello1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toast Message"
+        android:layout_below="@+id/btnHello2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
